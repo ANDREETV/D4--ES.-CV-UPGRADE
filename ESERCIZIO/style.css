@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* GLOBALE */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+    color: black;
+}
+
+/* HEADER */
+
+header{
+    height: 300px;
+    width: 100%;
+    color: white;
+    background-color: #303843;
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+}
+
+.image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.image img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.titolo-info{
+    width: calc(100vw - 300px);
+    height: 100%;
+    position: relative;
+    left: 300px;
+    padding: 60px 0 30px 50px ;
+}
+
+.titolo-info h1{
+    font-size: 50px;
+    max-width: 300px;
+} 
+
+
+.info{
+    margin-top: 60px;
+    display: flex;
+    width: 465px;
+    height: 50px;
+    flex-wrap: wrap;
+}
+
+.info > *{
+    padding-right: 10px;
+}
+
+
+/* MAIN */
+
+main{
+    display: flex;   
+    color: black;
+}
+
+.main-container_sx{
+    height: auto;
+    width: 1300px;
+    padding: 50px 50px;
+    
+}
+
+.main-container_dx{
+    height: auto;
+    width: calc(100vw - 1300px);
+    padding: 50px 10px;
+
+}
+
+/* MAIN SX */
+
+.main-sx{
+    border-right: 2px solid #86868676; 
+    height: auto;
+    padding-right: 60px;
+}
+
+.main-sx_profilo{
+    margin-bottom: 40px;
+}
+.main-sx_profilo h2, 
+.main-sx_formazione h2, 
+.main-sx_esperienze h2, 
+.dati-personali h2, 
+.lingue h2,
+.hobby h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.main-sx_profilo p{
+    border-bottom: 2px solid #86868676;
+    padding-bottom:35px;
+}
+
+.main-sx_formazione, .main-sx_esperienze{
+    border-bottom: 2px solid #86868676;
+    padding-bottom: 30px;
+}
+
+.formazione-corso_anno{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 900;
+    font-size: 20px;
+    min-width: 200px;
+}
+
+.formazione-corso_info{
+    margin-bottom: 30px;
+}
+
+.formazione-corso_info p:first-of-type{
+    color: #86868676;
+}
+
+.formazione-corso_info p:last-of-type{
+    font-weight:900;
+}
+.formazione-corso_info p:nth-child(2){
+    font-weight: 500;
+}
+
+.formazione-corso_info ul{
+    padding-left: 30px;
+    margin-top: 20px;
+}
+
+#autorizzazioni{
+    margin-top: 120px;
+    font-size: 25px;
+}
+.main-sx_esperienze{
+    margin-top: 50px;
+}
+
+.dati-personali, 
+.lingue, 
+.hobby {
+    border-bottom: 2px solid #86868676;
+    width: 500px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.dati{
+    margin-bottom: 20px;
+}
+
+.dati p:first-child{
+    color: #868686c6;
+}
+
+.dati p:last-child{
+    font-weight: 500;
+}
+
+.lingue .dati p:first-of-type{
+    font-weight: 500;
+    color: black;
+}
+
+.riga{
+    width: 500px;
+    height: 10px;
+    background-color: #86868676;
+}
+
+.italiana{
+    width: 500px;
+    height: 10px;
+    background-color: #303843;
+}
+
+
+.inglese, .francese{
+    width: 150px;
+    height: 10px;
+    background-color: #303843;
+}
+
+
+.hobby ul{
+    padding-left: 20px;
+    list-style: square;
+    
+}
+
+/* FOOTER */
+
+footer{
+    padding-left: 40px;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+.formazione-corso_info #link_azienda{
+    margin-bottom: 20px;
+}
+
+.formazione-corso_info #testo_info{
+    margin-bottom: 20px;
+}
+
+.formazione-corso_info #link_azienda a{ 
+    color: black;
+}
